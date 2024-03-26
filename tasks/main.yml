@@ -28,6 +28,8 @@
     MAILCOW_HOSTNAME: "{{ mailcow__hostname }}"
     MAILCOW_TZ: "{{ mailcow__timezone }}"
     MAILCOW_BRANCH: "{{ mailcow__git_version }}"
+    SKIP_SOLR: "{{ mailcow__config_skip_solr }}"
+    SKIP_CLAMD: "{{ mailcow__config_skip_clamd }}"
   args:
     executable: /bin/bash
     chdir: "{{ mailcow__install_path }}"
